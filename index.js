@@ -8,6 +8,6 @@ app.use(express.urlencoded({ extended: true }));
 
 dbConn();
 
-app.listen();
+app.listen(process.env.PORT || 8080);
 
 app.use('/api/v1', UserRouter);
